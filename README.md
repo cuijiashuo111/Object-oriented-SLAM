@@ -1,13 +1,17 @@
 # EllipsoidSLAM
 
-## Introduction
+## Introduction 引言
 We propose a sparse object-level SLAM using Quadrics and Symmetry Properties for indoor environments. The algorithm is specially designed for mobile robots mounting an RGB-D camera. The algorithm takes bounding boxes generated from object detection and also the point cloud from the RGB-D frame to estimate the pose and occupy space of objects. Since ellipsoids are taken as the object representation, we name it EllipsoidSLAM.
+我们使用二次曲面和对称性提供一种用于室内环境的稀疏物体级SLAM。该算法是专门为安装RGB-D摄像机的移动机器人设计的。该算法采用从物体检测中生成的边界框以及RGB-D帧中的点云来估计物体的姿态和占用空间。由于将椭球体（二次曲面）用作对象表示，因此将其命名为EllipsoidSLAM。
 
 We have released a C++ implementation and a demo trajectory. We need to point out that this code is only a basic demo:
  * The core modules of Groundplane Extraction, Ellipsoid Estimation, and Symmetry Estimation are basic versions. They may not have full performance. Please see the paper for the complete framework. 
  * By default, only mapping is supported. If you want, it's possible to make simple changes to the Optimizer to enable the SLAM mode.
-
-## Related Paper
+我们已经发布了C ++实现和演示轨迹。 我们需要指出的是，这段代码只是一个基本的演示：
+  *地平面提取，椭球估计和对称估计的核心模块是基本版本。 他们不具有完美的性能。 请参阅论文以获取完整的框架。
+  *默认情况下，仅支持映射。 如果需要，可以对优化器进行简单更改以启用SLAM模式。
+  
+## Related Paper 相关论文
 [1] Ziwei Liao, Wei Wang, Xianyu Qi, Xiaoyu Zhang, Lin Xue, Jianzhen Jiao, Ran Wei, Object-oriented SLAM using Quadrics and Symmetry Properties for Indoor Environments. arXiv 2020. [[pdf]](https://arxiv.org/abs/2004.05303
 ) [[Video]](https://www.youtube.com/watch?v=u9zRBp4TPIs
 ) 
